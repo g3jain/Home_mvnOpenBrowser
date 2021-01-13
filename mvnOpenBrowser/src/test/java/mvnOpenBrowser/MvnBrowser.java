@@ -14,6 +14,7 @@ public class MvnBrowser {
 	public void setUp() {
 		System.setProperty("webdriver.chrome.driver", "D:\\ChromeDriver87\\chromedriver.exe");
 		driver = new ChromeDriver();
+		driver.manage().window().maximize();
 	}
 
 	@Test
